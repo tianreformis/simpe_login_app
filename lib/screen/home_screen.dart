@@ -25,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       textStyle: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
                   ))),
             ),
             Padding(
@@ -33,12 +34,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 left: 30.0,
                 top: 40.0,
               ),
-              child: Container(
+              child: SizedBox(
                 width: double.infinity,
                 height: 40.0,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.login),
-                  label: const Text("Login"),
+                  label: Text(
+                    "Login",
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                     foregroundColor: Colors.white,
@@ -53,12 +61,18 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding:
                   const EdgeInsets.only(right: 30.0, left: 30.0, top: 10.0),
-              child: Container(
+              child: SizedBox(
                 width: double.infinity,
                 height: 40.0,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.people),
-                  label: const Text("SignUp"),
+                  label: Text(
+                    "SignUp",
+                    style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                      color: Colors.white,
+                    )),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,
                     foregroundColor: Colors.white,
